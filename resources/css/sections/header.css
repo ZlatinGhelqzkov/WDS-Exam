@@ -1,0 +1,22 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.header__inner {
+    text-align: center;
+}
+
+.header__inner a {
+    display: inline-block;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.7));
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    border-top-left-radius: none;
+    border-top-right-radius: none;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}

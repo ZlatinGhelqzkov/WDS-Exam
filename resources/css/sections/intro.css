@@ -1,0 +1,364 @@
+.intro {
+    position: relative;
+    min-height: 90rem;
+    padding-top: 16.8rem;
+    padding-bottom: 17rem;
+    z-index: 5;
+}
+
+@media(min-width: 768px) {
+    .intro {
+        min-height: 91rem;
+        padding-top: 22.5rem;
+        padding-bottom: 0;
+    }
+}
+
+.intro__inner{
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .intro__inner{
+        text-align: left;
+    }
+}
+
+
+.sub-headline-wrapper {
+    position: relative;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+
+
+/*SILVER HEADLINE*/
+
+.sub-headline-gradient,
+.sub-headline-outline{
+    font-size: clamp(3rem, 6.5vw + 1rem, 7rem);
+    padding-right: 1rem;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+.sub-headline-gradient {
+    margin-left: -1rem;
+    color: transparent;
+    background: linear-gradient(0deg, rgba(215, 215, 215, 1) 0%, rgba(197, 197, 197, 1) 35%, rgba(255, 255, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.sub-headline-outline {
+    position: absolute;
+    left: -1rem;
+    right: 0;
+    top: 0;
+    color: transparent;
+    text-shadow:
+        1px 0 0 rgba(0, 0, 0, 0.5),
+        0 1px 0 rgba(0, 0, 0, 0.5),
+        -1px 0 0 rgba(0, 0, 0, 0.5),
+        0 -1px 0 rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+@media(min-width: 768px){
+    .sub-headline-gradient,
+    .sub-headline-outline{
+        font-size: 7rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .sub-headline-gradient,
+    .sub-headline-outline{
+        font-size: clamp(5rem, 5.2vw + 1rem, 7rem);
+    }
+}
+
+/*###################### SILVER HEADLINE END ###################*/
+
+.button--intro {
+    margin-bottom: 3rem;
+}
+
+@media(min-width: 768px){
+    .button--intro{
+        margin-bottom: 5rem;
+    }
+}
+
+.intro-platform-text {
+    opacity: 0.600;
+    font-size: 1.6rem;
+    letter-spacing: 0px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.intro-platform-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+@media(min-width: 768px){
+    .intro-platform-wrapper{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+@media(min-width: 1024px){
+    .intro-platform-wrapper{
+        display: inline-flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding: 1rem 1.5rem 0.7rem;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        width: clamp(55rem, 40vw + 1rem ,74rem);
+        gap: 1rem;
+    }
+}
+
+.platform-row{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media(min-width: 576px){
+    .platform-row{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .platform-row{
+        gap: 1rem;
+    }
+
+    .platform-row img{
+        width: 60%;
+        height: 4rem;
+    }
+}
+
+@media(min-width: 1600px){
+    .platform-row img{
+        width: 80%;
+        height: clamp(4.5rem, 2vw + 1rem, 5rem);
+    }
+}
+
+.platform-shopify,
+.platform-woo,
+.platform-wp,
+.platform-wix {
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-name: platforms;
+    opacity: 0;
+    transform: translate(-200%);
+}
+
+.platform-shopify{
+    animation-delay: 1.5s;
+    grid-column: span 2;
+    padding-right: 2rem;
+}
+
+.platform-woo{
+    animation-delay: 1s;
+    margin-bottom: -10px;
+    grid-column: span 1;
+}
+
+.platform-wp{
+    animation-delay: 1.5s;
+    grid-column: span 2;
+}
+
+.platform-wix{
+    animation-delay: 1s;
+    grid-column: span 1;
+}
+
+@media(min-width: 768px){
+    .platform-shopify{
+        padding-right: 0;
+        animation-delay: 2.5s;
+    }
+
+    .platform-woo{
+        animation-delay: 2s;
+        margin-bottom: -10px;
+    }
+    
+    .platform-wp{
+        animation-delay: 1.5s;
+    }
+    
+    .platform-wix{
+        animation-delay: 1s;
+    }
+}
+
+@keyframes platforms {
+    from {
+        opacity: 0;
+        transform: translate(-200%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+/*##############################
+########### LAPTOP ############
+###############################*/
+
+
+.laptop-parallax {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    width: 100%;
+    z-index: -1;
+}
+
+.laptop-parallax img{
+    animation-name: laptop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    max-width: unset;
+}
+
+.laptop-s{
+    object-fit: contain;
+    max-width: 100%;
+    width: 100%;
+}
+
+
+
+.laptop-m,
+.laptop-l {
+    display: none;
+}
+
+@media(min-width: 768px){
+    .laptop-s{
+        display: none;
+    }
+    .laptop-m{
+        display: block;
+        width: 100%;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .laptop-parallax {
+        top: 0;
+        right: 0;
+        bottom: -5rem;
+        right: 0;
+        left: unset;
+        bottom: unset;
+        justify-content: flex-end;
+    }
+
+    .laptop-m{
+        display: none;
+    }
+
+    .laptop-l {
+        display: block;
+    }
+}
+
+@media((min-width: 1024px) and (max-width: 1599px)){
+    .laptop-parallax {
+        height: 100%;
+    }
+
+    .laptop-l {
+        object-fit: contain;
+        height: 100%;
+        width: calc(80% - 40px);
+    }
+}
+
+@keyframes laptop {
+    from {
+        opacity: 0;
+        transform:translateY(-50%);
+    }
+
+    to {
+        opacity: 1;
+        transform:translateY(3%);
+    }
+}
+
+@media(min-width: 768px){
+
+    @keyframes laptop {
+        from {
+            opacity: 0;
+            transform:translateY(-50%);
+        }
+    
+        to {
+            opacity: 1;
+            transform:translateY(-15%);
+        }
+    }
+}
+
+@media((min-width: 1024px) and (max-width: 1599px)) {
+
+    @keyframes laptop {
+        from {
+            opacity: 0;
+            transform:translateY(-15%);
+        }
+    
+        to {
+            opacity: 1;
+            transform:translateY(5%);
+        }
+    }
+
+}
+
+@media(min-width: 1600px){
+    @keyframes laptop {
+        from {
+            opacity: 0;
+            transform:translateY(-15%);
+        }
+    
+        to {
+            opacity: 1;
+            transform:translateY(3%);
+        }
+    }
+}

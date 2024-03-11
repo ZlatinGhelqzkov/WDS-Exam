@@ -1,0 +1,63 @@
+/*##############################
+############ RESET #############
+##############################*/
+@import url(/resources/css/reset.css);
+
+
+
+/*##############################
+########## TYPOGRAPHY ##########
+##############################*/
+@import url(/resources/css/typograpghy/headings.css);
+@import url(/resources/css/typograpghy/links.css);
+@import url(/resources/css/typograpghy/paragraphs.css);
+
+
+
+/*##############################
+########## COMPONENTS ##########
+##############################*/
+@import url(/resources/css/components/grid.css);
+@import url(/resources/css/components/bg.css);
+@import url(/resources/css/components/button.css);
+
+
+
+/*##############################
+########## SECTIONS ##########
+##############################*/
+@import url(/resources/css/sections/header.css);
+@import url(/resources/css/sections/intro.css);
+@import url(/resources/css/sections/tailor-made.css);
+@import url(/resources/css/sections/platforms.css);
+@import url(/resources/css/sections/addons-section.css);
+@import url(/resources/css/sections/services.css);
+@import url(/resources/css/sections/templates.css);
+@import url(/resources/css/sections/offer.css);
+@import url(/resources/css/sections/footer.css);
+
+
+:root {
+    --accent-clr: #e96749;
+    --offer-clr: #f16e4e;
+    --green-clr: #4ccf34;
+    --footer-bg-clr: #e0e6ec;
+    --addons-section-bg-clr: #f1efed;
+    --platforms-bg-clr: #1a1a1f;
+}
+
+.ff-bai {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.ff-helvetica {
+    font-family: 'Helvetica Regular', sans-serif;
+}
+
+.ff-commando {
+    font-family: "Commando 2011 Regular", sans-serif;
+}
+
+.ff-hemi {
+    font-family: 'Hemi', sans-serif;
+}

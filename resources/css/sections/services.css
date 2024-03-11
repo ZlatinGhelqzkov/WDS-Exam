@@ -1,0 +1,174 @@
+.services {
+    position: relative;
+    padding-top: 4.3rem;
+    padding-bottom: 5rem;
+}
+
+@media(min-width: 768px){
+    .services{
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.astronaut,
+.cloud-single,
+.planet,
+.adventurer {
+    display: none;
+}
+
+@media(min-width: 1024px) {
+
+    .astronaut,
+    .cloud-single,
+    .planet,
+    .adventurer {
+        display: block;
+        position: absolute;
+    }
+}
+
+
+.astronaut {
+    top: -8%;
+    left: 0;
+}
+
+@media(min-width: 1700px){
+    .astronaut{
+        top: -18%;
+    }
+}
+
+.planet {
+    bottom: 0;
+}
+
+.cloud-single {
+    right: 0;
+    top: 9.5rem;
+}
+
+.adventurer {
+    bottom: 0;
+    right: 0;
+    max-width: 70rem;
+    max-height: 70rem;
+}
+
+.services__inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5.3rem;
+}
+
+@media(min-width: 768px) {
+    .services__inner {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 8rem;
+        justify-items: center;
+    }
+}
+
+@media(min-width: 1024px){
+    .services__inner{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4.6rem;
+    }
+}
+
+.services-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 768px){
+    .services-card{
+        max-width: 36.5rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .services-card{
+        max-width: unset;
+    }
+}
+
+
+.services-card img {
+    margin-bottom: 1.5rem;
+}
+
+@media(min-width: 768px){
+    .services-card img{
+        margin-bottom: 2.2rem;
+    }
+
+    .services-card[data-image="basket"] img{
+        margin-bottom: 1.5rem;
+    }
+}
+
+.services-title {
+    width: 105%;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-transform: uppercase;
+    color: var(--accent-clr);
+    font-weight: 700;
+    font-family: "Bai Jamjuree";
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.services-description {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: #000000;
+    font-weight: 400;
+    font-family: "Bai Jamjuree";
+    text-align: center;
+    text-wrap: balance;
+    margin-bottom: 0.5rem;
+}
+
+@media(min-width: 768px){
+
+    .services-title{
+        font-size: 2.6rem;
+        line-height: 3rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .services-title[data-title="small"]{
+        width: 80%;
+    }
+
+    .services-description{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .services-description[data-description="large"]{
+        width: 110%;
+    }
+
+    .services-description[data-description="x-large"]{
+        width: 120%;
+        text-wrap: balance;
+    }
+}
+
+@media(min-width: 1024px){
+    .services-description[data-description="large"]{
+        width: 100%
+    }
+
+    .services-description[data-description="x-large"]{
+        width: 100%;
+        text-wrap: balance;
+    }
+}

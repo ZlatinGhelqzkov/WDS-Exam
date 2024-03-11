@@ -1,0 +1,197 @@
+.tailor-made {
+    padding-top: 75%;
+    margin-top: -5rem;
+    padding-bottom: 5rem;
+}
+
+@media(min-width: 768px) {
+    .tailor-made {
+        padding-top: 83.3%;
+        padding-bottom: 8rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .tailor-made {
+        padding-top: 15%;
+    }
+}
+
+@media(min-width: 1600px) {
+    .tailor-made {
+        padding-top: 20rem;
+    }
+}
+
+
+.tailor-made .bg {
+    display: none;
+}
+
+@media(min-width: 1024px) {
+    .tailor-made .bg {
+        display: block;
+    }
+}
+
+.tailor-made__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: auto;
+    text-align: center;
+}
+
+@media(min-width: 1024px) {
+    .tailor-made__inner {
+        align-items: flex-start;
+        max-width: 84.3rem;
+        text-align: start;
+    }
+}
+
+.tailor-made-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.6rem;
+    text-wrap: nowrap;
+}
+
+.tailor-made-title h2:first-of-type {
+    margin-bottom: 1.6rem;
+}
+
+@media(min-width: 768px) {
+    .tailor-made-title {
+        flex-direction: row;
+        align-items: unset;
+        justify-content: center;
+        margin-bottom: 1.6rem;
+    }
+
+    .tailor-made-title h2:first-of-type {
+        margin-bottom: 1.5rem;
+    }
+}
+
+.h2--tailor-made {
+    position: relative;
+    z-index: 100;
+}
+
+.h2--tailor-made:after {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -1.5rem;
+    right: 0;
+    width: 120%;
+    bottom: -1rem;
+    background: url(/resources/images/desktop/tailor-made-outline.webp);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: 101;
+}
+
+@media(min-width: 768px) {
+    .h2--tailor-made:after {
+        height: 105%;
+    }
+}
+
+.tailor-made-content {
+    background: #fff;
+    width: 100%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+@media(min-width: 1024px) {
+    .tailor-made-content {
+        padding: 5rem 4.5rem;
+    }
+}
+
+.tailor-made-description {
+    font-size: 2rem;
+    display: inline-block;
+    line-height: 2.5rem;
+    color: #000000;
+    text-wrap: balance;
+    margin-bottom: 2rem;
+}
+
+@media(min-width: 768px) {
+    .tailor-made-description {
+        font-size: 2.5rem;
+        line-height: 3.4rem;
+        margin-bottom: 1.7rem;
+    }
+}
+
+.tailor-made-scrollers-wrapper {
+    width: 100%;
+    padding-bottom: 2.5rem;
+    filter: drop-shadow(0px 2px 12.5px rgba(0, 0, 0, 0.1));
+}
+
+.tailor-made-marquee-scroller {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.tailor-made-marquee-scroller[data-animated="true"] {
+    padding: 0.5rem 0rem;
+    overflow: hidden;
+    mask: linear-gradient(90deg, transparent 0%, white 10%, white 90%, transparent 100%);
+    -webkit-mask: linear-gradient(90deg, transparent 0%, white 10%, white 90%, transparent 100%);
+}
+
+.tailor-made-scroller__inner {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    height: 7.3rem;
+    gap: 2rem;
+}
+
+.tailor-made-marquee-scroller[data-animated="true"] .tailor-made-scroller__inner {
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 30s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.tailor-made-marquee-scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+
+.tailor-made-marquee-scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+.tailor-made-link:hover {
+    box-shadow: 0px 0px 10px rgba(200 200 200 / 1);
+}
+
+.tailor-made-link {
+    background: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 22rem;
+    transition: opacity 0.2s ease-in-out;
+}
+
+@keyframes scroll {
+
+    /*This is 0.5rem because the gap is 1rem and we are doing HALF(50%) of the element,
+    So we also need HALF of the gap*/
+    to {
+        transform: translate(calc(-50% - 1rem));
+    }
+
+}

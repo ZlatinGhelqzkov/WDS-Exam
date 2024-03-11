@@ -1,0 +1,140 @@
+.addons-section {
+    background: var(--addons-section-bg-clr);
+    padding: 4.1rem 0rem 5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .addons-section{
+        padding: 8rem 0rem 7.5rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .addons-section{
+        text-align: start;
+        padding: 8rem 0rem 11rem;
+    }
+}
+
+.addons-section h4{
+    line-height: 1;
+}
+
+@media(min-width: 768px){
+    .addons-section h4{
+        line-height: 54px;
+        font-size: 4.8rem;
+    }
+}
+
+.addons-section span {
+    display: inline-block;
+    font-size: clamp(2rem, 18vw + 1rem ,8.5rem);
+    line-height: 56px;
+    text-transform: uppercase;
+    color: var(--accent-clr);
+    margin-bottom: 1.6rem;
+}
+
+@media(min-width: 768px){
+    .addons-section span{
+        margin-bottom: 2.6rem;
+    }
+}
+
+.addons-description {
+    position: relative;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+    z-index: 5;
+}
+
+@media(min-width: 768px){
+    .addons-description{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media(min-width: 1200px){
+    .addons-description{
+        max-width: 76.3rem;
+    }
+}
+
+.crane {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateX(28%);
+}
+
+@media(min-width: 1200px) {
+    .crane {
+        display: block;
+    }
+}
+
+.crane img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.addons-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 94px);
+    column-gap: 3rem;
+    row-gap: 2.7rem;
+    margin-bottom: 2.8rem;
+    justify-content: center;
+}
+
+@media(min-width: 768px){
+    .addons-grid {
+        grid-template-columns: repeat(5, 94px);
+        grid-template-rows: repeat(4, 120px);
+        row-gap: 1.6rem;
+    }
+}
+
+@media(min-width: 1200px) {
+    .addons-grid {
+        max-width: 600px;
+    }
+}
+
+.grid-addon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.addon-image {
+    width: 94px;
+    height: 94px;
+    background: #fff;
+    border-radius: 2rem;
+    padding: 1.8rem;
+    margin-bottom: 1.3rem;
+    filter: drop-shadow(24.458px 23.618px 15px rgba(0, 0, 0, 0.05));
+}
+
+.addon-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.addon-name {
+    font-size: 1.2rem;
+    font-family: "Helvetica";
+    text-align: center;
+    white-space: nowrap;
+}

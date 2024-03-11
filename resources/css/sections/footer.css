@@ -1,0 +1,169 @@
+.footer {
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
+    background: #fff;
+}
+
+@media(min-width: 768px){
+    .footer{
+        padding-top: 7.5rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .footer {
+        background: var(--footer-bg-clr);
+        padding-top: 13.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.pills,
+.people {
+    position: absolute;
+    display: none;
+}
+
+@media(min-width: 1024px) {
+
+    .pills,
+    .people {
+        display: block;
+    }
+}
+
+.pills {
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.people {
+    top: 0;
+    bottom: 0;
+}
+
+.people img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer__inner {
+    position: relative;
+    text-align: center;
+    z-index: 5;
+}
+
+.footer-title {
+    opacity: 0.5;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #000000;
+    font-style: italic;
+    font-family: "Bai Jamjuree";
+    text-align: center;
+}
+
+@media(min-width: 768px){
+    .footer-title{
+        margin-bottom: 2.6rem;
+    }
+}
+
+.footer-counter-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    padding-bottom: 3.5rem;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1.732px 10px rgba(0, 0, 0, 0.1));
+    
+}
+
+@media(min-width: 768px) {
+    .footer-counter-list {
+        background: rgba(255, 255, 255, 0.8);
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+        margin-bottom: 3rem;
+        row-gap: 1.5rem;
+    }
+}
+
+.counter-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex: 0 0 100%;
+}
+
+@media(min-width: 768px) {
+    .counter-item {
+        flex: 0 0 50%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .counter-item {
+        flex: 1;
+    }
+}
+
+.counter {
+    font-size: 6rem;
+    line-height: 7rem;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+}
+
+.counter-title {
+    font-size: 25px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    text-wrap: balance;
+}
+
+@media(min-width: 768px){
+    .counter-title[data-width="small"]{
+        width: 70%;
+    }
+}
+
+.footer__inner .button {
+    margin-bottom: 3rem;
+}
+
+@media(min-width: 768px){
+    .footer__inner .button{
+        margin-bottom: 5rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .footer__inner .button{
+        margin-bottom: 14rem;
+    }
+}
+.copyright {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: #000000;
+}
+
+@media(min-width: 768px){
+    .copyright{
+        line-height: 3rem;
+    }
+}

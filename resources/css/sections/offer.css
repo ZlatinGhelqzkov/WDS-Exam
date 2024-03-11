@@ -1,0 +1,111 @@
+.offer {
+    background: var(--offer-clr);
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+@media(min-width: 768px){
+    .offer{
+        padding-top: 7.5rem;
+        padding-bottom: 9rem;
+    }
+}
+
+@media(min-width: 1024px){
+    .offer{
+        padding-top: 18.5rem;
+        padding-bottom: 15.5rem;
+    }
+}
+
+.offer-business-woman,
+.offer-rocket-girl {
+    position: absolute;
+    display: none;
+}
+
+@media(min-width: 1024px){
+    .offer-business-woman,
+    .offer-rocket-girl{
+        display: block;
+    }
+}
+
+.offer-business-woman {
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.offer-business-woman img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.offer-rocket-girl {
+    top: -4.5rem;
+    right: 0;
+}
+
+.offer__inner {
+    text-align: center;
+}
+
+.offer__inner h3 {
+    text-wrap: balance;
+    margin-bottom: 1rem;
+}
+
+@media(min-width: 768px){
+    .offer__inner h3{
+        text-wrap: unset;
+        line-height: 6rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.offer__inner .button {
+    margin-bottom: 3rem;
+}
+
+
+@media(min-width: 768px){
+    .offer__inner .button{
+        margin-bottom: 2.2rem;
+    }
+}
+
+.offer-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+@media(min-width: 768px){
+    .offer-logos{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+.offer-shopify{
+    grid-column: span 2;
+}
+
+.offer-woo {
+    margin-top: 10px;
+    grid-column: span 1;
+}
+
+.offer-wordpress{
+    grid-column: span 2;
+}
+
+.offer-wix{
+    grid-column: span 1;
+}
