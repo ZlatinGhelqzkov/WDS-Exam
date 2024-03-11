@@ -20,7 +20,6 @@ function addAnimation() {
             //clones the item
             const duplicatedItem = item.cloneNode(true);
             //removes the aria for screen readers to no read it twice
-            duplicatedItem.setAttribute('aria-hidden', true);
             scrollerInner.appendChild(duplicatedItem);
         })
     })
