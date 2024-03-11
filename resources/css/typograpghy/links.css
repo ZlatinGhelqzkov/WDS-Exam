@@ -24,7 +24,7 @@
 .services-link::before {
     content: "";
     position: absolute;
-    background: url(/resources/images/icons/link-arrow.webp);
+    background: url(../../images/icons/link-arrow.webp);
     left: 0;
     top: 50%;
     width: 8px;
